@@ -102,7 +102,6 @@ gpg --armor --export ★☆★☆★☆★☆★☆
 
 上記コマンドで出力されたデータをコピーします。
 
-
 ```shell
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
