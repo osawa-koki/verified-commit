@@ -153,3 +153,5 @@ git config --global commit.gpgsign true
 
 以上で完成です。  
 コミットすると「Verified」マークがついてカッコよくなります。  
+
+![実行結果](dev/img/fruits.png)  
