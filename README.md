@@ -146,7 +146,13 @@ O1GsPNy6☆★☆★☆tEHUFOqZqPaOZadsG7RvxEppEKe2zZRjt5i9Q==
 最後にgit.configに反映する必要があります。  
 
 ```shell
+# Windowsユーザ 🪟🪟🪟
 git config --global gpg.program "C:\Program Files (x86)\GnuPG\bin\gpg.exe"
+git config --global user.signingkey <キーID>
+git config --global commit.gpgsign true
+
+# Unix系ユーザ 🍎🍎🍎
+git config --global gpg.program gpg
 git config --global user.signingkey <キーID>
 git config --global commit.gpgsign true
 ```
