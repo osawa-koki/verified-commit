@@ -161,3 +161,7 @@ git config --global commit.gpgsign true
 コミットすると「Verified」マークがついてカッコよくなります。  
 
 ![実行結果](dev/img/fruits.png)  
+
+## 参考文献
+
+- <https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification>
