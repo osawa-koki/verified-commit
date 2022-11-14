@@ -142,6 +142,7 @@ O1GsPNy6☆★☆★☆tEHUFOqZqPaOZadsG7RvxEppEKe2zZRjt5i9Q==
 
 以上完成です。  
 ちなみに登録したメールアドレスはGitHubアカウントに正しく登録されている必要があります。  
+登録したメールアドレスがGitHubアカウントに登録されていないと、「unverified」となり、正しく認証されません。  
 
 ### Gitコマンドへの登録
 
@@ -163,6 +164,28 @@ git config --global commit.gpgsign true
 コミットすると「Verified」マークがついてカッコよくなります。  
 
 ![実行結果](dev/img/fruits.png)  
+
+### ユーザ名とメールアドレスの登録
+
+Gitコミットに対して適切なユーザ名とメールアドレスを設定する必要があります。  
+これをしないと、「unverified」のままとなります。  
+ユーザ名とメールアドレスは以下のコマンドで登録できます。  
+
+```shell
+git config --global user.name <ユーザ名>
+git config --global user.email <メールアドレス>
+```
+
+## トラブルシューティング
+
+### unverifiedのまま
+
+原因として、以下の4つが考えられます。
+
+- コミットに適切なユーザ名・メールアドレスが設定されていない。
+- GitHubアカウントに対象のメールアドレスが登録されていない。
+- GitHubアカウントにGPPキーが登録されていない。
+- 使用するGPGキーを間違えている。
 
 ## 参考文献
 
